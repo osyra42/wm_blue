@@ -1,1 +1,19 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rear Camera Barcode Scanner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Rear Camera Barcode Scanner</h1>
+  <button id="startScanner">Start Scanner</button>
+  <div id="cameraContainer">
+    <div id="placeholder" class="placeholder"></div>
+    <video id="cameraStream" width="320" height="240" autoplay></video>
+  </div>
+  <canvas id="canvas" width="320" height="240" style="display: none;"></canvas>
+  <pre id="result"></pre>
+  <script src="https://cdn.jsdelivr.net/npm/@ericblade/quagga2/dist/quagga.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
